@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Goldgar</title>
+    <!--Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+    <!--Font Awesome (for icons)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <section class="flex-row">
+        <section class="flex-column">
+          <div class="my-logo">
+          </div>
+        </section>
+        <!--Top Nav Bar -->
+        <section class="flex-column">
+          <nav>
+            <ul>
+              <li class="navigation-link blue">
+                <a href="#">about</a>
+              </li>
+              <li class="navigation-link red"><a href="#">blog</a></li>
+              <li class="navigation-link purple"><a href="#">projects</a></li>
+              <li class="navigation-link yellow"><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </header>
+
+    <!--Hero Image Carousel -->
+    <section class="my-carousel row">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/carousel1.jpg" alt="zilker-kites">
+            <div class="carousel-caption">
+              <h3><a href="about.html">About Me</a></h3>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="img/carousel2.jpg" alt="giants-causeway">
+            <div class="carousel-caption">
+              <h3><a href="blog.html">Blog</a></h3>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/carousel3.jpg" alt="fish">
+            <div class="carousel-caption">
+              <h3><a href="sources.html">Site Sources</a></h3>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!--Portfolio Title-->
+    <section class="portfolio-title">
+      <h1>Featured Projects</h1>
+    </section>
+    <!--Circular Portfolio -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="row">
+            <div class="circle_container col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+                <div class="central_text text-center">
+                    <h3><a href="projects.html">See more</a></h3>
+                </div>
+              <div class="project_container project1"><img class="project project1" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project2"><img class="project project2" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project3"><img class="project project3" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project4"><img class="project project4" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project5"><img class="project project5" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project6"><img class="project project6" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project7"><img class="project project7" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+              <div class="project_container project8"><img class="project project8" src="https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Form -->
+    <section class="contact col-md-12 col-lg-12">
+      <h1>Get in touch</h1>
+      <form action="index.html">
+        <input type="text" name="name" value="" placeholder="Name">
+        <input type="email" name="contact" value="" placeholder="Email">
+        <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+      </form>
+      <input type="submit" value="Submit" class="blue button">
+    </section>
+
+    <!--Footer-->
+    <footer class="col-md-12 col-lg-12">
+      <ul>
+        <li><a href="https://github.com/sgoldgar">
+          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/sgoldgar/">
+          <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="http://codepen.io/sgoldgar/">
+          <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+        </a></li>
+      </ul>
+      <h5>Made by Sarah Goldgar</h5>
+    </footer>
+
+  <!--jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js "></script>
+  <!--Bootstrap jQuery -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Custom Javascript -->
+  <script src="js/main.js"></script>
+
+  </body>
+</html>

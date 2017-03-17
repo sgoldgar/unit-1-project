@@ -1,0 +1,319 @@
+body {
+  background-color: #f0cac8;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+.button {
+  color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+  font-size: 300%;
+  text-decoration: underline;
+  text-shadow: 2px 2px grey;
+}
+
+.line {
+  border-top: 3px solid white;
+  width:10%;
+  margin: 10px auto;
+}
+
+.blue {
+  background-color: #4F92C6;
+}
+
+.purple{
+  background-color: #6E6BAB;
+}
+
+.red {
+  background-color: #DE6868;
+}
+
+.yellow {
+  background-color: #E1C267;
+}
+
+.row, .flex-row {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.flex-column {
+  width: 50%;
+  margin: 0;
+}
+
+/* Nav Bar and Header */
+header{
+  background-color: #aaf0dd;
+  flex-direction: row;
+}
+
+.my-logo {
+  background-color: white;
+  background-image: url("img/ginny.png");
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  justify-content: flex-start;
+  margin: 20px 30px;
+  padding: 30px;
+}
+
+nav {
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  margin-top: 15px;
+}
+
+.navigation-link {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  display: flex;
+  padding:10px;
+}
+
+.navigation-link a {
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.navigation-link a:hover {
+  text-decoration: underline;
+  color: white;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+/*Carousel */
+.my-carousel {
+  width: 70%;
+  margin-top: 60px;
+  border: 10px solid white;
+}
+
+.carousel-caption {
+  padding: 5px;
+  margin: 5px;
+}
+
+.item h3 {
+  font-size: 50px;
+  margin-bottom: 40%;
+  background-color: #6E6BAB;
+  border-radius: 25px;
+  padding: 5px;
+  border: 3px solid white;
+}
+
+.item h3:hover {
+  background-color: #8c89c4;
+}
+
+.item h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Portfolio Title*/
+.portfolio-title{
+  padding-top: 120px;
+
+}
+.portfolio-title h1 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #aaf0dd;
+  color: white;
+}
+/*Portfolio Circles*/
+.portfolio {
+  padding-top: 280px;
+  padding-bottom: 280px;
+  height: 500px;
+  background-color: #aaf0dd;
+  width: 80%;
+  margin: auto;
+}
+
+.portfolio .container {
+  margin-left: 2%;
+  position: relative;
+}
+
+.central_text{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+  color: #4F92C6;
+  background-color: white;
+  border-radius: 50%;
+  width: 30%;
+  padding: 10px;
+}
+
+
+.central_text h3{
+  font-weight: bolder;
+  margin: 25%;
+}
+
+
+.project_container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 20%;
+	transform: translate(-50%, -50%);
+}
+
+.project{
+	width: 100%;
+	height: auto;
+	position: relative;
+	left: 175%;
+}
+
+.project_container img {
+  border-radius: 50%;
+  border: 5px solid white;
+  min-height: 110px;
+}
+
+/*Place images in circle*/
+.project_container.project1{
+	transform: translate(-50%, -50%);
+}
+.project_container.project2{
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.project_container.project3{
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+.project_container.project4{
+	transform: translate(-50%, -50%) rotate(135deg);
+}
+.project_container.project5{
+	transform: translate(-50%, -50%) rotate(180deg);
+}
+.project_container.project6{
+	transform: translate(-50%, -50%) rotate(225deg);
+}
+.project_container.project7{
+	transform: translate(-50%, -50%) rotate(270deg);
+}
+.project_container.project8{
+	transform: translate(-50%, -50%) rotate(315deg);
+}
+
+.project.project2{
+	transform: rotate(-45deg);
+}
+.project.project3{
+	transform: rotate(-90deg);
+}
+.project.project4{
+	transform: rotate(-135deg);
+}
+.project.project5{
+	transform: rotate(-180deg);
+}
+.project.project6{
+	transform: rotate(-225deg);
+}
+.project.project7{
+	transform: rotate(-270deg);
+}
+.project.project8{
+	transform: rotate(-315deg);
+}
+
+/*Change colors of containers*/
+
+.project1 img:hover, .project5 img:hover{
+  border: 5px solid #4F92C6;
+  min-height: 120px;
+  min-width: 120px;
+}
+
+.project2 img:hover, .project6 img:hover{
+  border: 5px solid #E1C267;
+  min-height: 120px;
+  min-width: 120px;
+}
+
+.project3 img:hover, .project7 img:hover{
+  border: 5px solid #6E6BAB;
+  min-height: 120px;
+  min-width: 120px;
+}
+
+.project4 img:hover, .project8 img:hover{
+  border: 5px solid #DE6868;
+  min-height: 120px;
+  min-width: 120px;
+}
+
+/*Contact Form*/
+.contact{
+  margin-bottom: 50px;
+}
+
+.contact h1{
+  margin-top: 80px;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 20px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 80%;
+  border: #4F92C6 dotted 2px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+/*Footer*/
+footer {
+  background-color: #aaf0dd;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer li {
+  margin: 0 auto;
+  padding: 10px;
+}
