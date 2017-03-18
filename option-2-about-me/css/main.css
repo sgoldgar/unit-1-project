@@ -24,7 +24,6 @@ section {
 }
 
 h1 {
-  font-size: 300%;
   color: #070364;
   max-width: 20%;
   border: 2px solid #070364;
@@ -32,6 +31,8 @@ h1 {
   padding: 2%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 5vh;
+  position: relative;
 }
 
 .flex-row {
@@ -67,16 +68,20 @@ header{
 }
 
 .my-logo {
-  margin-right: 60%;
+  margin-right: 50%;
 }
+
 .my-logo img {
   border-radius: 50%;
   height: 70px;
   width: 70px;
-  margin: 20px;
+  margin: 20px 30px;
   border: 5px solid #747A6D;
 }
 
+#menu-icon {
+  display: hidden;
+}
 
 nav ul {
   display: flex;
@@ -87,7 +92,7 @@ nav ul {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  margin: 0 auto;
+  margin: 0 1vw;
   display: flex;
   padding:15px;
   background-color: #747A6D;
@@ -183,6 +188,7 @@ footer li {
   justify-content: space-between;
   width: 100%;
   margin: 0 6%;
+  flex-wrap: wrap;
 }
 
 .container.offset {
@@ -191,6 +197,7 @@ footer li {
   display: inherit;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .about h2, .projects h2 {
@@ -209,7 +216,7 @@ footer li {
    border-radius: 50%;
    width: 150px;
    min-height:150px;
-   margin: 0 20px;
+   margin: 10px 20px;
 }
 
 .image-link img {
@@ -238,8 +245,6 @@ footer li {
   opacity: 0.7;
 }
 
-
-
 /*Contact Form*/
 form {
   margin: 0 auto;
@@ -255,3 +260,62 @@ form input, form textarea {
   margin: 10px auto;
   font-size: 100%;
 }
+
+/*Phone Layout*/
+@media only screen and (max-device-width: 480px) {
+  body {
+    margin: 0 auto;
+  }
+  .my-logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  #menu-icon i {
+    margin-top: 80%;
+    float: right;
+    padding: 0;
+  }
+  nav {
+    float: right;
+    width: 100%;
+  }
+  nav ul{
+    display: inline-block;
+    overflow: hidden;
+    float: right;
+  }
+  .navigation-link{
+    border-radius: 0;
+    margin: 1%;
+    float: right;
+    height: 10%;
+  }
+  h1 {
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .section{
+    padding-bottom: 5%;
+  }
+  .my-carousel {
+    margin-top: 50%;
+  }
+  .container, .container.offset {
+    margin-left: 20%;
+  }
+
+  .circle, .image-link img {
+    margin: 10%;
+  }
+  .about h2{
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+  footer  {
+  width: 100%;
+  }
+	}
