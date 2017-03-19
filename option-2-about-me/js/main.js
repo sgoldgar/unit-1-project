@@ -71,12 +71,25 @@ $('nav ul li').eq(3).first().on('click', function(){
   console.log('contact');
 });
 
-if ($('#menu-icon').css('display','inline-block')) {
+
+if ($('#menu-icon').css('display') == 'inline-block' ) {
   $('nav ul').hide();
   $('#menu-icon').on('click', function(){
     $('nav ul').toggle();
   })
-}
+};
+
+/*Lightbox Functionality*/
+$(".about .circle").each(function(index, element) {
+
+  $(this).on('click', function(){
+    $(this).next().fadeIn(300) && $('.lightbox-background').children().fadeIn(300);
+  });
+  $(".close").on('click', function(){
+    $(".lightbox, .lightbox-background").fadeOut(300);
+  });
+});
+
 
 
 })

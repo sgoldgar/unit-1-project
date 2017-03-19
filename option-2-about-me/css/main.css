@@ -79,8 +79,8 @@ header{
   border: 5px solid #747A6D;
 }
 
-#menu-icon {
-  display: hidden;
+#menu-icon, #menu-icon i {
+  display: none;
 }
 
 nav ul {
@@ -225,7 +225,7 @@ footer li {
 }
 
 
-.about a {
+.about .circle a {
  position: absolute;
  top: 65px;
  left: 0;
@@ -261,6 +261,36 @@ form input, form textarea {
   font-size: 100%;
 }
 
+/*Lightbox*/
+.lightbox-background {
+  display:none;
+  background:#000000;
+  opacity:0.9;
+  position:absolute;
+  top:0px;
+  left:0px;
+  min-width:100%;
+  min-height:100%;
+  z-index:1000;
+}
+
+.lightbox {
+  display:none;
+  position:relative;
+  left:50%;
+  margin: 10px -200px 0;
+  width:400px;
+  background:#FFFFFF;
+  padding:10px 15px 10px 15px;
+  border:2px solid #CCCCCC;
+  z-index:1001;
+}
+
+.lightbox ul {
+  list-style: none;
+  padding: 5%;
+}
+
 /*Phone Layout*/
 @media only screen and (max-device-width: 480px) {
   body {
@@ -272,6 +302,7 @@ form input, form textarea {
   }
 
   #menu-icon i {
+    display: inline;
     margin-top: 80%;
     float: right;
     padding: 0;
