@@ -121,19 +121,19 @@ if(menuStatus == "block") {
 
 
 /*Cycle Quotes*/
-var testimonials = [$('.quotes p').eq(0).text(), $('.quotes p').eq(1).text(), $('.quotes p').eq(2).text()];
-console.log(testimonials);
+var quoteCounter = 0;
+var quoteLength = $('.quotes p').length;
 
-function loopTestimonials(){
-  for (var k=0; k<4; k++) {
-      $('.quotes p').first().text($(testimonials).get(k));
-      $('.quotes p').first().fadeIn(100).delay(400).fadeOut(100);
-      console.log($('.quotes p').first().text());
-      // if(k == testimonials.length) {k=0};
-  };
-    console.log('slidequote');
-};
-loopTestimonials();
-
+setInterval(function () {
+  $('.quotes p').eq(quoteCounter).fadeOut(400, function () {
+    console.log($('.quotes p').text());
+    if (quoteCounter === quoteLength - 1) {
+      quoteCounter = 0;
+    } else {
+      quoteCounter += 1;
+    }
+    $('.quotes p').eq(quoteCounter).fadeIn();
+  });
+}, 3000);
 
 })
