@@ -105,3 +105,9 @@ For small screens (max 480px), special styles are applied:
 ## Hamburger Toggle for Mobile
 A variable called menu status which holds the css display value of the element with the id menu-icon (the hamburger icon) is declared.
 If the menuStatus (the css display value) equals block (which it does only on the mobile media query), the navigation bar is hidden. When the hamburger icon is clicked, the nav bar visibility is toggled off and on.
+
+# In Progress
+* Getting nav link to stay highlighted when currently viewing a section that it corresponds to
+* Full mobile capability
+* Adjusting lightbox so that page does not scroll to top when lightbox opens, making lightbox smaller and pictures larger maybe
+* More TBD(decided/discovered)
