@@ -26,6 +26,17 @@ $('.my-logo').hover(
   }
 );
 
+
+/*Hamburger Toggle for Mobile*/
+var menuStatus = ($('#menu-icon').css('display'));
+if(menuStatus == "block" || menuStatus == "inline-block") {
+  $('nav').hide();
+  $('#menu-icon').on('click', function(){
+    $('nav').toggle();
+    console.log('click');
+  });
+}
+
 /*Scroll to Sections*/
 
 function scroll(target){
@@ -46,6 +57,9 @@ $('nav ul li:first-child').first().on('click', function(){
   $(this).siblings().removeClass('selected');
   var target = '.about';
   scroll(target);
+  if(menuStatus == "block" || menuStatus == "inline-block") {
+    $('nav').hide();
+  }
   console.log('about');
 });
   /*Scroll to about when click on carousel link*/
@@ -72,6 +86,9 @@ $('nav ul li').eq(2).first().on('click', function(){
   $(this).siblings().removeClass('selected');
   var target = '.projects';
   scroll(target);
+  if(menuStatus == "block" || menuStatus == "inline-block") {
+    $('nav').hide();
+  }
   console.log('projects');
 });
 
@@ -81,6 +98,9 @@ $('nav ul li').eq(3).first().on('click', function(){
   $(this).siblings().removeClass('selected');
   var target = '.contact';
   scroll(target);
+  if(menuStatus == "block" || menuStatus == "inline-block") {
+    $('nav').hide();
+  }
   console.log('contact');
 });
 
@@ -95,17 +115,6 @@ $(".about .circle").each(function(index, element) {
     $(".lightbox, .lightbox-background").fadeOut(300);
   });
 });
-
-
-/*Hamburger Toggle for Mobile*/
-var menuStatus = ($('#menu-icon').css('display'));
-if(menuStatus == "block" || menuStatus == "inline-block") {
-  $('nav').hide();
-  $('#menu-icon').on('click', function(){
-    $('nav').toggle();
-    console.log('click');
-  });
-}
 
 
 /*Cycle Quotes*/
