@@ -23,7 +23,6 @@ section {
   background-color: rgba(7, 3, 100, 1);
 }
 
-
 h1 {
   color: #070364;
   max-width: 20%;
@@ -32,13 +31,11 @@ h1 {
   padding: 2%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 5vh;
-  position: relative;
+  font-size: 4vw;
 }
 
 .flex-row {
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -48,7 +45,7 @@ h1 {
   margin: 0;
 }
 
-/*Gradient Colors*/
+/*Colors*/
 .grey {
   background: #E1E1E6;
 }
@@ -148,36 +145,6 @@ nav ul {
   opacity: 1;
 }
 
-/*Testimonials*/
-.hidden {
-  display: none;
-}
-
-/*Footer*/
-footer {
-  width: 25%;
-  margin: 0 auto;
-}
-
-footer h5, footer a{
-  color: #747A6D;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-}
-
-footer li {
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 50%;
-  background-color: #EBEBCA;
-}
-
 /*About Me and Projects*/
 
 .about p {
@@ -213,7 +180,7 @@ footer li {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/*Image Links*/
+/*Circle Links*/
 .image-link img, .circle {
    position: relative;
    width: 100%; /* for IE 6 */
@@ -249,19 +216,7 @@ footer li {
   opacity: 0.7;
 }
 
-.pictures{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.pictures img{
-  width: 40%;
-  height: 30%;
-  padding: 5%;
-}
-
-/*Lightbox*/
+/*Lightboxes*/
 .lightbox-background {
   display:none;
   background:#000000;
@@ -291,6 +246,19 @@ footer li {
   padding: 5%;
 }
 
+.pictures{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pictures img{
+  width: 40%;
+  height: 30%;
+  padding: 5%;
+}
+
+
 /*Contact Form*/
 form {
   margin: 0 auto;
@@ -307,6 +275,30 @@ form input, form textarea {
   font-size: 100%;
 }
 
+/*Footer*/
+footer {
+  width: 25%;
+  margin: 0 auto;
+}
+
+footer h5, footer a{
+  color: #747A6D;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+footer li {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #EBEBCA;
+}
 
 /*Phone Layout*/
 @media only screen and (max-device-width: 480px) {
@@ -315,7 +307,7 @@ form input, form textarea {
     max-width: 480px;
   }
   header{
-    height: 15%;
+    height: 30%;
   }
   .my-logo img {
     height: 30px;
@@ -337,7 +329,7 @@ form input, form textarea {
     background: #EBEBCA;
   }
   nav ul{
-    display: inline-block;
+    display: block;
     overflow: hidden;
     float: right;
   }
@@ -356,6 +348,7 @@ form input, form textarea {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    font-size: 5vw;
   }
   .section{
     padding-bottom: 5%;
@@ -363,10 +356,15 @@ form input, form textarea {
   .my-carousel {
     margin-top: 50%;
   }
-  .container, .container.offset {
-    margin-left: 23%;
+  .projects .container {
+    margin-left: 28%;
   }
-
+  .projects .container.offset, .about .container.offset{
+    margin-left: 27%;
+  }
+ .about .container {
+    margin-left: 25%;
+  }
   .circle, .image-link img {
     margin: 10%;
   }
@@ -376,6 +374,6 @@ form input, form textarea {
     margin: 0 auto;
   }
   footer  {
-  width: 100%;
+    width: 100%;
   }
 }

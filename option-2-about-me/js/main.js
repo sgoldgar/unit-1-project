@@ -31,7 +31,6 @@ $('.my-logo').hover(
 function scroll(target){
   $('html, body').animate({
     scrollTop: $(target).offset().top - 150}, 'slow');
-    // var sectionTop = $(target).offset().top - 150;
 }
 
 
@@ -47,10 +46,6 @@ $('nav ul li:first-child').first().on('click', function(){
   $(this).siblings().removeClass('selected');
   var target = '.about';
   scroll(target);
-  // var scrollPosition = $(window).scrollTop();
-  // if (scrollPosition >= sectionTop) {
-  //   $(this).removeClass('selected');
-  // }
   console.log('about');
 });
   /*Scroll to about when click on carousel link*/
@@ -91,14 +86,6 @@ $('nav ul li').eq(3).first().on('click', function(){
 
 
 
-
-if ($('#menu-icon').css('display') == 'inline-block' ) {
-  $('nav ul').hide();
-  $('#menu-icon').on('click', function(){
-    $('nav ul').toggle();
-  })
-};
-
 /*Lightbox Functionality*/
 $(".about .circle").each(function(index, element) {
   $(this).on('click', function(){
@@ -126,7 +113,6 @@ var quoteLength = $('.quotes p').length;
 
 setInterval(function () {
   $('.quotes p').eq(quoteCounter).fadeOut(400, function () {
-    console.log($('.quotes p').text());
     if (quoteCounter === quoteLength - 1) {
       quoteCounter = 0;
     } else {
