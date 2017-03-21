@@ -326,7 +326,6 @@ footer li {
     float: right;
     width: 30%;
     margin-left: 70%;
-    background: #EBEBCA;
   }
   nav ul{
     display: block;
@@ -335,9 +334,9 @@ footer li {
   }
   .navigation-link{
     border-radius: 0;
-    margin: 1%;
     float: right;
     height: 5px;
+    border: 2px solid rgba(7, 3, 100, 1);
   }
   .navigation-link a {
     margin: 0 auto;
@@ -348,22 +347,16 @@ footer li {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    font-size: 5vw;
+    font-size: 9vw;
   }
   .section{
     padding-bottom: 5%;
   }
-  .my-carousel {
-    margin-top: 50%;
+  .container, .container.offset  {
+    flex-direction: column;
   }
-  .projects .container {
-    margin-left: 28%;
-  }
-  .projects .container.offset, .about .container.offset{
-    margin-left: 27%;
-  }
- .about .container {
-    margin-left: 25%;
+  .about .container, .about .container.offset {
+    margin-left: 18%;
   }
   .circle, .image-link img {
     margin: 10%;

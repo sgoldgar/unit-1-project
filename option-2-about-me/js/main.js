@@ -99,10 +99,11 @@ $(".about .circle").each(function(index, element) {
 
 /*Hamburger Toggle for Mobile*/
 var menuStatus = ($('#menu-icon').css('display'));
-if(menuStatus == "block") {
+if(menuStatus == "block" || menuStatus == "inline-block") {
   $('nav').hide();
   $('#menu-icon').on('click', function(){
     $('nav').toggle();
+    console.log('click');
   });
 }
 
