@@ -1,4 +1,4 @@
-#Resources Used
+# Resources Used
   * html
   * Bootstrap CSS and JS (for carousel only)
   * Font Awesome for icons
@@ -7,7 +7,7 @@
   * Google Fonts (Quicksand and Josefin Sans)
   * Colors from Design Seeds (https://www.design-seeds.com/seasons/spring/color-treat1/)
 
-#General Layout
+# General Layout
   1. Header/Nav Bar
   2. Carousel
   3. About  
@@ -111,3 +111,14 @@ If the menuStatus (the css display value) equals block (which it does only on th
 * Full mobile capability
 * Adjusting lightbox so that page does not scroll to top when lightbox opens, making lightbox smaller and pictures larger maybe
 * More TBD(decided/discovered)
+
+# Challenges/Wins
+Flexbox is a big challenge for me. I thought you needed to build an actual grid with columns for each designated space rather than just using flexwrap.
+
+I also had trouble with the testimonials as I was setting the content of each p into an array at first. Looking at source code for example really helped there.
+
+Originally I had a different design with a circle layout for projects. However, this was not very responsive and the colors were off sometimes, so I started over with the same basic structure. Additionally I attempted to use bootstrap for a lot of the original design, but discovered that it was conflicting with a lot of the custom css that I wanted. I was not very good at flexbox so I decided that the previous problem combined with that was a good reason to use it on second iteration.
+
+However, the carousel in bootstrap is much better than other solutions I found so I went to Bootstrap and downloaded custom CSS and JS just for the carousel and downloaded them into css/js files locally that I linked to my project.
+
+I encountered some trouble with the circle layout and offset containers that required some odd adjusting in the media query for mobile and experienced some difficulty at first with the hamburger.
